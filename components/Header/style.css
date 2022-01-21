@@ -1,0 +1,121 @@
+.header {
+  width: 100%;
+  background: radial-gradient(
+    109.56% 109.56% at 0% -2.94%,
+    rgba(129, 129, 129, 0.185) 0%,
+    rgba(25, 47, 45, 0.8) 100%
+  );
+  backdrop-filter: blur(4px);
+}
+.header > .container {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header-icon {
+  width: 36px;
+  height: 36px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 42px;
+  cursor: pointer;
+}
+.sound-icon {
+  width: 40px;
+  height: 40px;
+  mask-size: contain;
+  background-color: rgb(250, 250, 250);
+  mask: url(../../assets/svg/audio.svg) no-repeat 100% 100%;
+}
+.snow-icon {
+  background-color: #fff;
+  mask-size: cover;
+  mask: url(../../assets/svg/snow.svg) no-repeat 100% 100%;
+}
+.nav-link {
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.nav-link:hover {
+  border-bottom: 1px solid white;
+  opacity: 0.7;
+}
+.header-nav > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  width: 400px;
+  transition: 0.2s;
+}
+.header-nav > ul > li {
+  margin-right: 7%;
+  transition: 0.2s;
+}
+.header-search {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  background: radial-gradient(
+    118.88% 606.86% at 0% 0%,
+    rgba(36, 197, 219, 0.15) 0%,
+    rgba(36, 197, 219, 0) 100%
+  );
+  backdrop-filter: blur(31px);
+  border-radius: 30px;
+  width: 254px;
+  height: 36px;
+  color: #fff;
+  padding-left: 15px;
+  margin-right: 56px;
+  font-size: 16px;
+  border: 1px solid #fff;
+}
+.header-search::-webkit-search-cancel-button {
+  position: relative;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background-size: contain;
+  -webkit-appearance: none;
+  background-image: url(./../../assets/close.png);
+  cursor: pointer;
+}
+
+.header-search::placeholder {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1.2px;
+}
+.favorite-count {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  background-image: url(./../../assets/favorite-count.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  color: #fff;
+  font-weight: 600;
+}
+.snowflake {
+  background-size: contain;
+  background-image: url(./../../assets/svg/snow.svg);
+  position: absolute;
+  top: 0px;
+  animation: fall linear forwards;
+}
+.select-icon {
+  background-color: #24c5db;
+}
+@keyframes fall {
+  to {
+    transform: translateY(75vh);
+  }
+}

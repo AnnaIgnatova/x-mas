@@ -1,0 +1,42 @@
+.tree-bg {
+  width: 53%;
+  background-size: cover;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  height: 80vh;
+  position: relative;
+  z-index: 0;
+}
+.x-mas-tree {
+  position: relative;
+  height: 90%;
+  width: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.snowfall {
+  width: 98%;
+  margin: auto;
+  height: 100%;
+  position: absolute;
+  z-index: 100;
+  pointer-events: none;
+}
+.tree-gareland {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+}
+.hidden {
+  display: none;
+}
+@media (max-width: 1300px) {
+  .tree-bg {
+    width: 100%;
+  }
+}

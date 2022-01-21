@@ -1,0 +1,43 @@
+.bgs-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.bg-item {
+  border-radius: 10px;
+  width: 68px;
+  height: 68px;
+  background-size: cover;
+  cursor: pointer;
+  transition: .2s;
+  margin-bottom: 10px;
+}
+.bg-item:hover {
+  box-shadow: 0px 2px 15px 1px rgba(255, 255, 255, 0.5);
+}
+.bg-1 {
+  background-image: url(./../../../../assets/bg/1.jpg);
+}
+.bg-2 {
+  background-image: url(./../../../../assets/bg/2.jpg);
+}
+.bg-3 {
+  background-image: url(./../../../../assets/bg/3.jpg);
+}
+.bg-4 {
+  background-image: url(./../../../../assets/bg/4.jpg);
+}
+.bg-5 {
+  background-image: url(./../../../../assets/bg/5.jpg);
+}
+.bg-6 {
+  background-image: url(./../../../../assets/bg/6.jpg);
+}
+.bg-7 {
+  background-image: url(./../../../../assets/bg/7.jpg);
+}
+.bg-8 {
+  background-image: url(./../../../../assets/bg/8.jpg);
+}
